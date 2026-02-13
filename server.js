@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const PORT = process.env.PORT || 5000;
+const PORT = 5000;
 
 // In-memory database (for demo)let tasks = [];
 let idCounter = 1;
