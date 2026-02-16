@@ -65,7 +65,7 @@ app.delete("/tasks/:id", (req, res) => {
   res.json({ message: "Deleted successfully" });
 });
 app.get("/", (req, res) => {
-  res.send("Hello digital ocean how are you! i am fine");
+  res.send("Hello digital ocean how are you! i am fine mera nam smartan hai");
 });
 
 app.listen(PORT, () => {
