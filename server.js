@@ -64,6 +64,9 @@ app.delete("/tasks/:id", (req, res) => {
   tasks = tasks.filter(t => t.id != req.params.id);
   res.json({ message: "Deleted successfully" });
 });
+app.get("/", (req, res) => {
+  res.send("Welcome to the Task Manager API!");
+});
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
